@@ -6,7 +6,9 @@ function Modal({onClose, currentPhoto}) {
         <div className="modalBackdrop">
             <div className="modalContainer">
                 <h3 className="modalTitle">{name}</h3>
-                <img alt={category} />
+                <img 
+                    src={require(`../../assets/large/${category}/${index}.jpg`).default}
+                    alt={category} />
                 <p>
                     {description}
                 </p>
